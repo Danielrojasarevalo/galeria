@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galería</title>
+<link rel="stylesheet" href="aos.css">
+<link rel="stylesheet" href="aos.js">
+
+    <!-- Cargar los íconos de Remix -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav__bar">
+            <div class="logo">
+                <a href="#"><img src="images/vista2.jpg" alt="logo" /></a>
+            </div>
+            <h1 class="nav__title">Nuestra Galería</h1>
+            <div class="nav__menu__btn" id="menu-btn" aria-label="Abrir menú">
+                <i class="ri-menu-line"></i> <!-- Icono de tres puntos -->
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="daniel.html">Daniel Rojas Arevalo</a></li>
+            <li><a href="valentina.html">Valentina Ceballos Losada</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+
+        </ul>
+    </nav>
+
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <h1>Bienvenidos</h1>
+            <br>
+            <h2>Lo hacemos con el fin de que todos nuestros recuerdos queden plasmados en esta página.</h2>
+            <br>
+            <p>Tu primera impresión remota en lo físico, pero cuando los sentimientos se despiertan ocasiónan un giro inesperado en la vida de cada persona.
+                Así mismo paso cuando una personita entro hacer parte de mi día tras dia , de mis contentos y mis contratiempos.
+                Llegaste a enseñarme que la distancia se convierte en un puente que nos une, y no en un abismo que nos separa. Y apartir de estas historia los recuerdos son lo mas bonito que podemos guardar .
+                Anhelo llenar esta página con cada detalles de nuestra relación para 
+                
+                tener siempre ese déjà Vu de recordar como inicio nuestra historia.</p>
+            <div class="gallery-container">
+                <div class="gallery-card">
+                    <a href="images/concentrada.jpg" data-lightbox="roadtrip"><img src="images/concentrada.jpg" alt="Imagen"></a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/dormido.jpg" data-lightbox="roadtrip"><img src="images/dormido.jpg" alt="Imagen"></a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/feliz.jpg" data-lightbox="roadtrip"><img src="images/feliz.jpg" alt="Imagen"></a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/picofrente.jpg" data-lightbox="roadtrip"><img src="images/picofrente.jpg" alt="Imagen"></a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/picocama.jpg" data-lightbox="roadtrip"><img src="images/picocama.jpg" alt="Imagen"></a>
+                </div>
+                <div class="gallery-card">
+                    <a href="images/ñomi.jpg" data-lightbox="roadtrip"><img src="images/ñomi.jpg" alt="Imagen"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="section__container about__container" id="about" data-aos="zoom-out">
+        <div class="about__image">
+          <img class="img1" src="images/feliz2.jpg" alt="about" />
+        </div>
+          <div class="about__content">
+          <p class="section__subheader">Sobre Nosotros</p>
+           <h2 class="section__header">LA MEJOR HISTORIA COMIENZA AQUÍ  </h2>
+            <p class="section__description">
+            Como te dije desde un inicio, Nuestra historia comienza desde ese charco, a pesar que el primer dia no nos dirigimos demasiado la palabra hubo una conexion inimaginable, eres la niña de mi sueño y el ser que mas amo Valentina
+            </p>
+            <div class="about__btn">
+             <a href="nosotros.html"><button class="btn">Leer mas sobre nosotros</button></a>
+            </div>
+            </div>
+          </section>
+
+          <footer class="arevalo">
+            <div class="arevalo__empanadas">
+              <div class="arevalo__valentina">
+                <p><i class="ri-map-pin-line"></i> ubicado en mi corazon<br><strong>Huila, Colombia</strong></p>
+                <p><i class="ri-phone-line"></i> numero del amor</p>
+                <p><i class="ri-mail-line"></i> <a href="rojasarevalodaniel@gmail.com">correo del amor </a></p>
+              </div>
+              <div class="arevalo__rojas">
+                <h3>Sobre nuestro amor</h3>
+                <p>Al inicio ambos estábamos en una etapa de prevención, evaluando si éramos la persona indicada. Con el tiempo, nos dimos cuenta de que no nos equivocamos al elegirnos. Deseamos que este amor sea como el vino: que con el tiempo solo mejore, fortaleciendo nuestra relación y creciendo juntos cada día.</p>
+                <div class="arevalo__hamburguesas">
+                    <a href="https://www.facebook.com/?locale=es_LA"   target="_blank"><i class="ri-facebook-box-line"></i></a>
+                    <a href="https://www.instagram.com"  target="_blank"><i class="ri-instagram-line"></i></a>
+                    <a href="https://x.com/?lang=es"  target="_blank"><i class="ri-twitter-line"></i></a>
+                    <a href="https://github.com"  target="_blank"><i class="ri-github-line"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+
+    <!-- Cargar jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Scripts de Lightbox -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <!-- Scripts personalizados -->
+    <script src="js/script.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>

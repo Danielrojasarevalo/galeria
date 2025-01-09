@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros</title>
+  <link rel="stylesheet" href="nosotros.css">
+</head>
+<body>
+
+    
+  <div class="container">
+    <header class="header">
+      <h1>Nosotros - Quiero que a parte de especial sea nuestro album.</h1>
+      <h2> Te amo mi Carboncito</h2>
+    </header>
+    <section class="holas">
+      <div class="hola">Te</div>
+      <div class="hola">Amo</div>
+      <div class="hola">Valentina</div>
+      <div class="hola">Ceballos</div>
+      <div class="hola">Losada</div>
+    </section>
+    <section class="main-content">
+      <img src="images/lengua.jpg" alt="Template Preview" class="main-image">
+      <div class="content-details">
+        <h2>Experiencias vividas Dani y Valen forever my love</h2>
+        <p>Daniel: Aquel dia, a pesar de que yo sabia que ibas hacer mi novia tu no lo sabias, sin embargo, como siempre apoyandome en mis locuras llevaste un bolso sin saber que ahi iba o estaba guardado el famoso mensaje"puedo ser tu novio"
+        </p>
+        <p>Valentina: Cuando cargue el bolsito pensé jummm y este que lleva JAJAJAJAJA  tenia curiosidad para saber que llevaba pero lo primero que me dijo "Valentina espere a que lleguemos allá " confieso cuando empezamos a pintar yo está de chismosita mirando de reojo pero no alcanzaba a enfocar, hasta que llegó el momento que marco esto tan bonito . Debo decir que fueron muchas emociones pero algo que resaltó no me arrepiento de la respuesta que di .</p>
+        <p>Daniel: Amor perdoneme, aunque le dije que no vieramos el dibujo no acate las reglas y las rompi cuando me dijo que no fuera a ver ya habia visto mas de 3 veces SJSJJSJSJ, se que es un trofeo de la copa piston, lo siento pero queria ver que me tenia preparado, usted tiene un arte unico me dejo sorprendido la forma como le estaba qeudando de hermoso, amor yo ya tenia todo listo desde Neiva, sorry</p>
+
+        <button class="cta-button" onclick="mostrarCorazon()">Eres un diamante</button>
+        <br>
+        <div class="heart" id="heart"></div>
+      </div>
+    </section>
+    <section class="demos">
+      <h2>18+ years</h2>
+      <div class="demo-images">
+        <img src="images/picofrente.jpg" alt="Demo 1" class="zoomable">
+        <img src="images/linda.jpg" alt="Demo 2" class="zoomable">
+        <img src="images/picoAce.jpg" alt="Demo 3" class="zoomable">
+      </div>
+      <br>
+      <div class="demo-images">
+      <img src="images/da1.jpg" alt="Demo 4" class="zoomable">
+      <img src="images/virtual1.jpg" alt="Demo 5" class="zoomable">
+      <img src="images/va1.jpg" alt="Demo 6" class="zoomable">
+    </div>
+ 
+      <!-- Modal para la imagen ampliada -->
+      <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+      </div>
+    </section>
+    
+    <a href="index.html" class="a-link">Regresar al inicio</a>
+    
+  </div>
+
+  <script>
+    function mostrarCorazon() {
+      var corazon = document.getElementById('heart');
+      corazon.style.visibility = 'visible';  // Mostrar el corazón
+      setTimeout(function() {
+        corazon.style.visibility = 'hidden';  // Ocultar el corazón después de 1 segundos
+      }, 1000);
+    }
+  </script>
+
+<script>
+  // Selecciona los elementos necesarios
+const images = document.querySelectorAll(".zoomable");
+const modal = document.getElementById("image-modal");
+const modalImage = document.getElementById("modal-image");
+const closeModal = document.querySelector(".close");
+
+// Agrega evento de clic a cada imagen
+images.forEach((img) => {
+  img.addEventListener("click", () => {
+    modal.style.display = "block"; // Muestra el modal
+    modalImage.src = img.src; // Cambia la imagen del modal
+  });
+});
+
+// Cierra el modal al hacer clic en la "X"
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Cierra el modal al hacer clic fuera de la imagen
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+</script>
+</body>
+</html>

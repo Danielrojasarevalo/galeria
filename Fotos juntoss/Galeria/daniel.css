@@ -1,0 +1,173 @@
+/*lo que es de daniel html*/     
+.btn-1 {
+    display: felxx;
+    background-color: #5384b8; 
+    color: white; 
+    padding: 10px 20px;
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-1:hover {
+    background-color: #2d629b; 
+    color: white;
+  }
+  
+  .btn-1:active {
+    background-color: #093968; 
+    transform: scale(0.98);
+  } 
+
+
+  .general {
+    display: flex;
+  }
+  .general-1 {
+    width: 50%;
+    padding: 100px 150px 150px 100px;
+    background-color: var(--azul-claro);
+  }
+  .general-2{
+    background-image: url(images/daniel1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+  }
+  .general-3{
+    background-image: url(images/daniel2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+  }
+  .general-4{
+    background-image: url(images/daniel3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+  }
+  .general-5{
+    position: relative; /* Asegura que el contenido se posicione dentro del contenedor */
+    width: 50%;
+    height: 700px;
+    overflow: hidden;
+  }
+
+
+.general-5 video {
+  position: absolute;
+  top: 60%; /* Ajusta este valor para mover el video hacia abajo */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el video horizontalmente */
+  width: 100%;
+  height: auto; /* Mantén la proporción del video */
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+}
+
+  h2{
+    line-height: 70px;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin: 25px 0 45px 0;
+  }
+  p{
+    font-size: 16px;
+    margin: 25px 0 45px 0;
+
+  }
+
+/* Media Queries */
+@media(max-width: 900px) {
+
+
+  .general-1 {
+    width: 70%; /* Asegura que todos los elementos ocupen el 100% del ancho */
+  }
+  .general-2, .general-3, .general-4, .general-5 {
+    width: 50%;
+    align-items: center;
+  }
+  
+
+  .general-1 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .general-5 {
+    height: 400px;
+  }
+
+  .general-5 video {
+    top: 50%;
+    height: 100%;
+  }
+  .general-2, .general-3, .general-4, .general-5 {
+    order: 2; /* Hace que las imágenes aparezcan después de los textos */
+  }
+
+  .general-2, .general-3, .general-4 {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 480px) { 
+
+  .general {
+    flex-direction: column;
+  }
+
+  .general-1, .general-2, .general-3, .general-4, .general-5 {
+    width: 100%; /* Asegura que todos los elementos ocupen el 100% del ancho */
+  }
+
+  .general-1 h2 {
+    font-size: 28px;
+  }
+
+  .general-1 p {
+    font-size: 12px;
+  }
+
+  /* Mostrar las imágenes en pantallas pequeñas */
+  .general-2, .general-3, .general-4 {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+  }
+
+  /* Cambiar el orden para que las imágenes estén debajo de los textos */
+  .general-2, .general-3, .general-4, .general-5 {
+    order: 2; /* Hace que las imágenes aparezcan después de los textos */
+  }
+
+  .general-1 {
+    order: 1; /* Hace que el texto siempre esté antes de la imagen */
+  }
+
+  /* Para que las imágenes de fondo sean visibles, puedes mantener las imágenes en su lugar */
+  .general-2 {
+    background-image: url(images/daniel1.jpg);
+  }
+  .general-3 {
+    background-image: url(images/daniel2.jpg);
+  }
+  .general-4 {
+    background-image: url(images/daniel3.jpg);
+  }
+}
